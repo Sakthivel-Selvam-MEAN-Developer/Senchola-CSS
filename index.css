@@ -99,9 +99,8 @@ nav ul .list a.active{
     
 }
 .main h1{
+    top: 75px;
     position: absolute;
-    top: 300px;
-    left: 80px;
     font-variant: all-petite-caps;
 }
 .contact a{
@@ -177,3 +176,4 @@ footer ul{
         margin: 30px !important;
     }
 }
+
