@@ -3,13 +3,14 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     background-color: #12101e!important;
 }
 .container-fluid{
     padding: 0 !important;
 }
-.container{
-    margin-top: 30px;
+.container.carousel{
+    margin-top: 100px;
 }
 .container .carousel-item img{
     height: 526px !important;
@@ -21,6 +22,7 @@ body{
 }
 nav{
     position: sticky;
+    top: 0;
 }
 nav ul li p{
     margin: 0;
@@ -30,7 +32,6 @@ nav ul li{
 }
 nav ul a{
     text-decoration: none;
-    color: white;
 }
 
 nav ul{
@@ -47,7 +48,7 @@ nav .list{
 }
 nav{
     margin: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0.668);
 }
 nav ul .logo{
     margin: 0 30px;
@@ -96,10 +97,10 @@ nav ul .list a.active{
     background-image: url('./assets/avengers.jpg');
     background-position: center;
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 .main h1{
-    top: 75px;
+    bottom: 122px;
     position: absolute;
     font-variant: all-petite-caps;
 }
