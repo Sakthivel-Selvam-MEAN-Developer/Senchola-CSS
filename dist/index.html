@@ -7,85 +7,194 @@
     <title>Senchola Front-End | Batch 6</title>
     <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid" id="home">
         <nav>
             <ul>
                 <div class="list">
-                    <a href="#">
+                    <a href="#home" class="active">
                         <li>
                             <p>Home</p>
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="#slides">
                         <li>
-                            <p>Contact</p>
+                            <p>Slides</p>
                         </li>
                     </a>
                 </div>
                 <div class="logo">
-                    <a href="#">
+                    <a href="#home">
                         <li>
                             <img src="./assets/logo.svg" alt="logo">
                         </li>
                     </a>
                 </div>
                 <div class="list">
-                    <a href="#">
+                    <a href="#contact">
                         <li>
-                            <p>About</p>
+                            <p>Contact</p>
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="#about">
                         <li>
-                            <p>Signup</p>
+                            <p>About</p>
                         </li>
                     </a>
                 </div>
             </ul>
         </nav>
-        <div class="sliders">
-            <div class="slide loki">
-                <img src="./assets/loki.png" alt="loki">
-            </div>
-            <div class="slide captain">
-                <img src="./assets/captain.png" alt="captain">
-            </div>
-            <div class="slide iron-man">
-                <img src="./assets/iron-man.png" alt="iron-man">
-            </div>
-            <div class="slide thor">
-                <img src="./assets/thor.jpg" alt="thor">
-            </div>
-            <div class="slide ant-man">
-                <img src="./assets/ant-man.jpg" alt="ant-man">
-            </div>
-            <div class="slide black-panther">
-                <img src="./assets/black-panther.jpeg" alt="black-panther">
-            </div>
-            <div class="slide hawkeye">
-                <img src="./assets/hawkeye.jpg" alt="hawkeye">
-            </div>
-            <div class="slide spider-man">
-                <img src="./assets/spiderman.jpeg" alt="spider-man">
-            </div>
-            <div class="slide black-widow">
-                <img src="./assets/black-widow.jpg" alt="black-widow">
-            </div>
-            <div class="slide doctor-strange">
-                <img src="./assets/doctor-strange.jpg" alt="doctor-strange">
-            </div>
-            <!-- <div class="slide hulk">
-                <img src="./assets/hulk.jpg" alt="hulk">
-            </div> -->
+        <div class="main">
+            <h1><i>I love you 3000</i></h1>
         </div>
-        <button onclick="prev()">
-            Prev
-        </button>
-        <button onclick="next()">Next</button>
+        <div class="container carousel slide" id="slides" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/loki.png" alt="First slide">
+                    <div class="carousel-caption">
+                        <h2>Loki</h2>
+                        <p>
+                            Prince of Asgard, Odinson, rightful heir of Jotunheim, and God of Mischief, is burdened with
+                            glorious purpose. His desire to be a king drives him to sow chaos in Asgard. In his lust for
+                            power, he extends his reach to Earth. </p>
+                        <a href="https://www.marvel.com/characters/loki">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="./assets/thor.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h3>Thor Odinson</h3>
+                        <p>Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.</p>
+                        <a href="https://www.marvel.com/characters/thor-thor-odinson">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/ant-man.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Ant Man</h3>
+                        <p>Thief turned hero Scott Lang uses size manipulation tech to infiltrate bases and intimidate bad guys. Whether he’s commanding an insect army or standing tall at 65 feet, Scott’s always trying to do the right thing now that he’s Ant-Man.</p>
+                        <a href="https://www.marvel.com/characters/ant-man-scott-lang">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/captain.png" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Captain America</h3>
+                        <p>
+                            CAPTAIN AMERICA
+                            America’s World War II Super-Soldier continues his fight in the present as an Avenger and untiring sentinel of liberty.</p>
+                            <a href="https://www.marvel.com/characters/captain-america-steve-rogers">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/black-panther.jpeg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Black Panther</h3>
+                        <p>As the king of the African nation of Wakanda, T’Challa protects his people as the latest in a legacy line of Black Panther warriors.</p>
+                        <a href="https://www.marvel.com/characters/black-panther-t-challa">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/iron-man.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Iron Man</h3>
+                        <p>Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger.</p>
+                        <a href="https://www.marvel.com/characters/iron-man-tony-stark">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/spiderman.jpeg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Spider-Man</h3>
+                        <p>With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man.</p>
+                        <a href="https://www.marvel.com/characters/spider-man-peter-parker">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/black-widow.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Black Widow</h3>
+                        <p>A deadly assassin is closing in on Natasha Romanoff. Now Natasha must reunite with an unlikely group of spies from her past in order to survive and stop a lethal force from being unleashed on the world.</p>
+                        <a href="https://www.marvel.com/characters/black-widow-natasha-romanoff">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/hawkeye.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Hawkeye</h3>
+                        <p>An expert marksman and fighter, Clint Barton puts his talents to good use by working for S.H.I.E.L.D. as a special agent. The archer known as Hawkeye also boasts a strong moral compass that at times leads him astray from his direct orders.</p>
+                        <a href="https://www.marvel.com/characters/hawkeye-clint-barton">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/doctor-strange.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Dr Strange</h3>
+                        <p>Once a highly successful, yet notably egotistical, surgeon, Doctor Stephen Strange endured a terrible accident that led him to evolve in ways he could have never foreseen.</p>
+                        <a href="https://www.marvel.com/characters/doctor-strange-stephen-strange">know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/hulk.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h3>Hulk</h3>
+                        <p>Exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the mean, green rage machine called the Hulk.</p>
+                        <a href="https://www.marvel.com/characters/hulk-bruce-banner">know more</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#slides" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#slides" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="contact" class="contact d-flex w-100 align-items-center justify-content-center mt-5 mb-5">
+            <button class="btn btn-outline-danger"> <a href="mailto:sakthiselvamcs@gmail.com">Get in touch</a></button>
+        </div>
+        <div id="about" class="about d-flex flex-column align-items-center justify-content-center">
+            <h3>About</h3>
+            <p>
+                Marvel Comics is an American comic book publisher and the property of The Walt Disney Company since December 31, 2009. Marvel was founded in 1939 by Martin Goodman as Timely Comics,[3] and by 1951 had generally become known as Atlas Comics. The Marvel era began in June 1961 with the launch of The Fantastic Four and other superhero titles created by Stan Lee, Jack Kirby, Steve Ditko, and many others. The Marvel brand, which had been used over the years and decades, was solidified as the company's primary brand.
+            </p>
+            <a href="https://www.marvel.com" class="btn btn-outline-info ">know more</a>
+        </div>
+        <footer class=" d-flex justify-content-between align-items-center">
+            <a href="#home" class="ms-5">
+                <img src="./assets/logo.svg" alt="logo">
+            </a>
+            <ul class="d-flex me-5">
+                <a href="#home" class="active">
+                    <li>
+                        <p>Home</p>
+                    </li>
+                </a>
+                <a href="#slides">
+                    <li>
+                        <p>Slides</p>
+                    </li>
+                </a>
+                <a href="#contact" class="active">
+                    <li>
+                        <p>Contact</p>
+                    </li>
+                </a>
+                <a href="#about">
+                    <li>
+                        <p>About</p>
+                    </li>
+                </a>
+            </ul>
+        </footer>
     </div>
 </body>
-<script src="./index.js"></script>
+<!-- <script src="./index.js"></script> -->
+
 </html>

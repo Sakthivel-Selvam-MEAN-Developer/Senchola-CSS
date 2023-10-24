@@ -3,7 +3,27 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #12101e!important;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+.container{
+    margin-top: 30px;
+}
+.container .carousel-item img{
+    height: 526px !important;
+    opacity: .6;
+}
+.carousel-item{
+    border-radius: 10px;
+    overflow: hidden;
+}
+nav{
+    position: sticky;
+}
+nav ul li p{
+    margin: 0;
 }
 nav ul li{
     list-style: none;
@@ -14,6 +34,7 @@ nav ul a{
 }
 
 nav ul{
+    height: 70px;
     padding: 10px 0;
     margin: 0;
     display: flex;
@@ -45,29 +66,114 @@ nav ul .list a:after{
     transition: all 150ms linear;
     transform-origin: left;
 }
-nav ul .list a:hover:after{
+nav ul .list a:hover:after,
+nav ul .list a.active:after{
     transform: scaleX(1);
 }
-nav ul .list a:hover{
+nav ul .list a:hover,
+nav ul .list a.active{
     color: rgb(255, 255, 255);
 }
-.container{
-    width:100vw;
-    height: 100vh;
-}
-.container .sliders img{
-    width: 100vw;
-    height: 95vh;
-    /* opacity: .4; */
-}
-.container .sliders{
-    position: relative;
-}
-.container .sliders .slide{
-    display: none;
-}
-span{
+
+.container-fluid .sliders img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+.container .carousel-caption a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px 8px ;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.392);
+    transition: all 100ms linear;
+}
+.container .carousel-caption a:hover{
     background-color: red;
+}
+.container-fluid .main{
+    height: 100vh;
+    background-image: url('./assets/avengers.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+.main h1{
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    font-variant: all-petite-caps;
+}
+.contact a{
+    text-decoration: none;
+    color: white; 
+}
+.about{
+    color: white;
+    margin: 30px 300px;
+}
+.about p::first-letter{
+    font-size: 2rem;
+    color: red;
+}
+footer{
+    margin-bottom: 20px;
+    height: 120px;
+    background-color: black;
+}
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+footer ul li p{
+    margin: 0;
+}
+footer ul{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:770px) {
+    .container-fluid .carousel-item img{
+        height:450px !important;
+    }
+    .about{
+        margin: 30px 50px !important;
+    }
+}
+@media (max-width:486px) {
+    ul{
+        height: 90px !important;
+        margin-top: 20px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    nav .list{
+        order: 2;
+    }
+    nav .logo{
+        order: 1;
+    }
+}
+@media (max-width:850px) {
+    .about{
+        margin: 30px 200px;
+    }
+}
+@media (max-width:400px) {
+    .about{
+        margin: 30px !important;
+    }
 }
